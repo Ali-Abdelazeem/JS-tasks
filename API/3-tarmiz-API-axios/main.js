@@ -55,6 +55,7 @@ function getUsers() {
   .catch(error => {
       // Handle any errors that occur during the fetch
       console.error('There was a problem with the axios operation:', error);
+      reject("there is a problem mybe in the url")
     });
 
   })
@@ -63,7 +64,8 @@ function getUsers() {
 
 getUsers().then(()=> {
   getposts(1)
-})
+  document.querySelectorAll(".user")[0].classList.add("selected")
+}).catch((error) => console.log("==============>>>>>>"+error))
 
 function runPosts(id) {
   getposts(id)
@@ -88,6 +90,6 @@ user.classList.add("selected")
 
 
 
-
+console.log("end")
 
 
