@@ -2,19 +2,19 @@
 let cities = [
   {
     arabicName: "القاهرة",
-    englishName: "EG-C",
+    englishName: "Cairo",
   },
   {
     arabicName: "الشرقية",
-    englishName: "EG-SH",
+    englishName: "Ash Sharqīyah",
   },
   {
     arabicName: "الاسكندرية",
-    englishName: "EG-ALX",
+    englishName: "Alexandria",
   },
   {
     arabicName: "الأقصر",
-    englishName: "EG-LX",
+    englishName: "Luxor",
   },
 ];
 
@@ -26,7 +26,7 @@ for (let city of cities) {
   ).innerHTML += `<option value="${city.arabicName}">${city.arabicName}</option>`;
 }
 
-getTimePrayes("EG-C");
+getTimePrayes("Cairo");
 // Update prayer times
 document.getElementById("selectCity").addEventListener("change", () => {
   console.log(document.getElementById("selectCity").value);
@@ -34,6 +34,7 @@ document.getElementById("selectCity").addEventListener("change", () => {
   for (let city of cities) {
     if (city.arabicName == valueOfselect) {
       engName = city.englishName;
+      console.log(engName)
     }
   }
   getTimePrayes(engName);
