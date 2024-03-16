@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css file -->
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./all.min.css" />
+    <!-- axios file  -->
+    <script defer src="./node_modules/axios/dist/axios.js"></script>
+    <!-- main js file  -->
+    <script defer src="./main.js"></script>
+
+  </head>
+  <body style="direction: rtl">
+    <div class="container">
+      <!-- title ==> neme city and date  -->
+      <div class="title">
+        <h1 id="city">القاهرة</h1>
+        <div class="all-date">
+          <span id="day">الخميس</span>
+          <span id="date">22-10-2022</span>
+        </div>
+        <hr />
+      </div>
+      <!-- // title ==> neme city and date //  -->
+      <!-- cards -->
+
+      <div class="cards">
+        <div class="card" >
+          <h2 >الفجر</h2>
+          <p id="fajr">2:55</p>
+        </div>
+
+        <div class="card" >
+            <h2 >الشروق</h2>
+            <p id="shoroq">2:55</p>
+          </div>
+
+          <div class="card">
+            <h2 >الظهر</h2>
+            <p id="duhr">2:55</p>
+          </div>
+
+          <div class="card">
+            <h2 >العصر</h2>
+            <p id="asr">2:55</p>
+          </div>
+
+          <div class="card">
+            <h2 >المغرب</h2>
+            <p id="maghrep">2:55</p>
+          </div>
+
+          <div class="card">
+            <h2 >العشاء</h2>
+            <p id="ashaa">2:55</p>
+          </div>
+      </div>
+      <!-- // cards /-->
+      <!-- start select -->
+<div class="select">
+    <select name="" id="selectCity">
+        <!-- <option value="">cairo</option>
+        <option value="">sharkia</option>
+        <option value="">alex</option> -->
+      </select>
+</div>
+      <!-- end start select -->
+      <!-- start watch  -->
+      <div class="watch">
+        <p id="dayweek">الثلاثاء</p>
+<p id="numbers">2:10:55 </p>
+      </div>
+      <!--end start watch  -->
+    </div>
+  </body>
+</html>
