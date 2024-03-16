@@ -91,6 +91,9 @@ function watchTime(){
        
 let dateNow = new Date();
 let hours = dateNow.getHours();
+if (hours >= 12) {
+  hours -= 12
+}
 let minutes = dateNow.getMinutes();
 let seconds = dateNow.getSeconds();
 let dayofweek = dateNow.getDay();
