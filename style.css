@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Arvo", serif;
+}
+
+.container {
+    width: 60%;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    box-shadow: 0px 6px 15px #00000036;
+    padding: 50px;
+}
+
+
+.container h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+#set {
+    background-color: #673AB7;
+    font-size: 18px;
+}
+
+input[type="number"] {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+
+}
+
+.container p {
+    width: fit-content;
+    margin: 0 auto 20px auto;
+    color: #2c3e50;
+    padding: 10px 20px;
+    font-size: 40px;
+
+}
+
+.container .wrapper {
+    
+}
+
+.container button {
+    border: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    margin-left: 15px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.container .start {
+    background-color: green;
+}
+
+.container .start:hover {
+    background-color: rgba(0, 128, 0, 0.7);
+
+}
+.container .stop {
+    background-color: red;
+    
+}
+
+.container .stop:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+
+}
+.container .reset {
+    background-color: gray;
+    
+}
+
+.container .reset:hover {
+    background-color:rgba(128, 128, 128, 0.7);
+
+}
+
+
+@media  (max-width: 740px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media  (max-width: 500px) {
+    .container h1 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .container button {
+        border: none;
+        font-size: 16px;
+        padding: 6px 10px;
+        margin-left: 10px;
+        color: white;
+        border-radius: 3px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .3s;
+        margin-bottom: 10px;
+    }
+    input[type="number"] {
+        max-width: 150px;
+        padding: 6px 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+        margin-bottom: 10px;
+    
+    }
+
+    .container p {
+        width: fit-content;
+        margin: 0 auto 20px auto;
+        color: #2c3e50;
+        padding: 10px 20px;
+        font-size: 25px;
+    
+    }
+}
